@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>google search</title>
+</head>
+
+<body>
+
+    <h1>google search</h1>
+
+    <form action="https://google.co.il/search?" target="_blank">
+
+        <label for="search">Search text:</label>
+        <input type="text" id="search" name="q" required>
+
+        <label for="updated">That was updated in:</label>
+        <select id="updated" name="as_qdr">
+            <option value="w">previous seven days</option>
+            <option value="m">the previous month</option>
+            <option value="y">past year</option>
+            <option value="d">the previous 24 hours</option>
+        </select>
+
+        <label for="hebrew">Search only pages written in hebrew:</label>
+        <input type="checkbox" id="hebrew" name="lr" value="lang_iw">
+
+        <label for="results">Number of results:</label>
+        <input type="number" id="results" name="num" min="1" max="25" required>
+
+        <input style="color:green;border-radius: 12px;" type="submit" value="Ask google">
+
+    </form>
+
+</body>
+
+</html>

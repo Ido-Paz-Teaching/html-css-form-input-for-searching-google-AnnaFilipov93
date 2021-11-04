@@ -1,0 +1,9 @@
+label, input, select {
+    display: block;
+    margin: 5px 5px 5px 5px;
+    
+}
+
+label {
+    font-weight: bold;
+}
